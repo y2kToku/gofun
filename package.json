@@ -1,0 +1,26 @@
+{
+  "name": "gofun",
+  "version": "1.0.0",
+  "description": "Let&#39;s find your resipes!",
+  "author": "y2kToku",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "axios": "^0.19.2",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "firebase": "^7.14.2",
+    "nuxt": "^2.0.0",
+    "vuexfire": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "@nuxtjs/vuetify": "^1.0.0"
+  }
+}
