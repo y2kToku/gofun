@@ -2,6 +2,11 @@ const colors = require('vuetify/es5/util/colors').default
 
 module.exports = {
   mode: 'spa',
+  /**
+   * tokuda add
+   */
+  srcDir: "./client/",
+  serverMiddleware: ["~~/api/"],
   /*
   ** Headers of the page
   */
