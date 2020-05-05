@@ -1,4 +1,7 @@
 const colors = require('vuetify/es5/util/colors').default
+const webpack = require('webpack')
+// import webpack from 'webpack'
+
 
 module.exports = {
   mode: 'spa',
@@ -77,6 +80,11 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-    }
+    },
+    plugins: [
+      new webpack.ProvidePlugin({
+        '_': 'lodash'
+      })
+    ]
   }
 }
